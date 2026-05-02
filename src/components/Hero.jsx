@@ -34,7 +34,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full opacity-20 blur-xl"></div>
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
                 <img
-                  src="/images/profile.jpeg"
+                  src="images/profile.jpeg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />

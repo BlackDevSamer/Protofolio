@@ -5,7 +5,7 @@ const Projects = () => {
     {
       title: 'ERP System',
       description: 'A comprehensive ERP system for managing business operations, including sales, purchases, inventory, and customers.',
-      image: '/images/ERP.png',
+      image: 'images/ERP.png',
       tags: ['React', 'Node.js', 'MongoDB'],
       liveLink: '/soon',
       githubLink: 'https://github.com/BlackDevSamer/Clothes-System-',
@@ -13,7 +13,7 @@ const Projects = () => {
     {
       title: 'Sea Level migration with AI',
       description: 'A model to predict the migration of people and high levels of coastal flooding due to sea level rise using AI. working with LSTM AI model.',
-      image: '/images/sealevel.png',
+      image: 'images/sealevel.png',
       tags: ['React', '.NET', 'SQL Server'],
       liveLink: '/soon',
       githubLink: 'https://github.com/BlackDevSamer/Alexandria-Sea-Leval-Rise-Mitigation',

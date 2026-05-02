@@ -12,7 +12,7 @@ const About = () => {
           <div className="md:w-1/3 mb-8 md:mb-0 flex justify-center animate-slide-up">
             <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg">
               <img
-                src="/images/profile.jpeg"
+                src="images/profile.jpeg"
                 alt="About"
                 className="w-full h-full object-cover rounded-full"
               />
