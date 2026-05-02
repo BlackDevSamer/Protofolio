@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Skills = () => {
   const technicalSkills = [
     { name: 'HTML/CSS', level: '95%' },

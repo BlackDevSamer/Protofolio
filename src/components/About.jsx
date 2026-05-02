@@ -1,4 +1,4 @@
-import React from 'react';
+import { GraduationCap, Briefcase } from 'lucide-react';
 
 const About = () => {
   return (
@@ -10,11 +10,11 @@ const About = () => {
 
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/3 mb-8 md:mb-0 flex justify-center animate-slide-up">
-            <div className="w-64 h-64 rounded-lg overflow-hidden shadow-lg">
+            <div className="w-64 h-64 rounded-full overflow-hidden shadow-lg">
               <img
-                src="/images/480129712_3875303656115947_8554858830085625421_n.jpg"
+                src="/images/profile.jpeg"
                 alt="About"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-full"
               />
             </div>
           </div>
@@ -29,8 +29,8 @@ const About = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="flex items-start">
-                <div className="bg-primary bg-opacity-10 dark:bg-opacity-20 p-3 rounded-full mr-4">
-                  <i className="fas fa-graduation-cap text-primary"></i>
+                <div className="bg-primary/10 dark:bg-primary/20 p-3 rounded-full mr-4">
+                  <GraduationCap className="text-primary w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="font-semibold">Education</h4>
@@ -43,8 +43,8 @@ const About = () => {
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="bg-secondary bg-opacity-10 dark:bg-opacity-20 p-3 rounded-full mr-4">
-                  <i className="fas fa-briefcase text-secondary"></i>
+                <div className="bg-secondary/10 dark:bg-secondary/20 p-3 rounded-full mr-4">
+                  <Briefcase className="text-secondary w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="font-semibold">Experience</h4>

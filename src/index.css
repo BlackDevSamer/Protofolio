@@ -9,6 +9,8 @@
   --color-dark: #0f172a;
 }
 
+@custom-variant dark (&:is(.dark *));
+
 :root {
   font-family: "Poppins", sans-serif;
 }
@@ -73,4 +75,17 @@ body {
 
 .animate-slide-up {
   animation: slideUp 0.8s ease-out forwards;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
 }

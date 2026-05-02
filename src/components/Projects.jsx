@@ -1,30 +1,22 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const projects = [
     {
-      title: 'E-commerce Website',
-      description: 'A full-featured e-commerce platform with product listings, cart functionality, and secure checkout.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+      title: 'ERP System',
+      description: 'A comprehensive ERP system for managing business operations, including sales, purchases, inventory, and customers.',
+      image: '/images/ERP.png',
       tags: ['React', 'Node.js', 'MongoDB'],
-      liveLink: '#',
-      githubLink: '#',
+      liveLink: '/soon',
+      githubLink: 'https://github.com/BlackDevSamer/Clothes-System-',
     },
     {
-      title: 'Task Management App',
-      description: 'A productivity application for managing tasks with drag-and-drop functionality and team collaboration.',
-      image: 'https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
-      tags: ['Vue.js', 'Firebase', 'Tailwind CSS'],
-      liveLink: '#',
-      githubLink: '#',
-    },
-    {
-      title: 'Weather Dashboard',
-      description: 'Real-time weather application with 5-day forecast, location search, and interactive maps.',
-      image: 'https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
-      tags: ['JavaScript', 'API', 'Chart.js'],
-      liveLink: '#',
-      githubLink: '#',
+      title: 'Sea Level migration with AI',
+      description: 'A model to predict the migration of people and high levels of coastal flooding due to sea level rise using AI. working with LSTM AI model.',
+      image: '/images/sealevel.png',
+      tags: ['React', '.NET', 'SQL Server'],
+      liveLink: '/soon',
+      githubLink: 'https://github.com/BlackDevSamer/Alexandria-Sea-Leval-Rise-Mitigation',
     },
   ];
 
@@ -41,16 +33,18 @@ const Projects = () => {
               key={index}
               className="project-card bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-md transition duration-300 animate-slide-up"
             >
-              <div className="h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition duration-500 hover:scale-105"
-                />
+              <div className="h-48 overflow-hidden bg-gray-200 dark:bg-gray-600">
+                {project.image && (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition duration-500 hover:scale-105"
+                  />
+                )}
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                <p className="text-gray-600 dark:text-gray-300 mb-4 h-24 overflow-y-auto">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -64,14 +58,16 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex space-x-3">
-                  <a
-                    href={project.liveLink}
+                  <Link
+                    to={project.liveLink}
                     className="text-primary hover:underline flex items-center"
                   >
                     <i className="fas fa-external-link-alt mr-1"></i> Live Demo
-                  </a>
+                  </Link>
                   <a
                     href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 flex items-center"
                   >
                     <i className="fab fa-github mr-1"></i> Code

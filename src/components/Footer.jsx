@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Footer = () => {
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 py-12">
@@ -15,24 +13,28 @@ const Footer = () => {
           <div className="flex space-x-6 mb-6">
             <a
               href="https://github.com/BlackDevSamer"
+              target="_blank" rel="noopener noreferrer"
               className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition"
             >
               <i className="fab fa-github text-xl"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/samer-mohamed-a26624324/"
+              target="_blank" rel="noopener noreferrer"
               className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition"
             >
               <i className="fab fa-linkedin-in text-xl"></i>
             </a>
             <a
               href="https://www.facebook.com/samer.mohamed.555673/"
+              target="_blank" rel="noopener noreferrer"
               className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition"
             >
               <i className="fab fa-facebook text-xl"></i>
             </a>
             <a
               href="https://www.instagram.com/s_m0hmed/"
+              target="_blank" rel="noopener noreferrer"
               className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition"
             >
               <i className="fab fa-instagram text-xl"></i>

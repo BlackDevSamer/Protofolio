@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center pt-20">
@@ -36,7 +34,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full opacity-20 blur-xl"></div>
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
                 <img
-                  src="/images/480129712_3875303656115947_8554858830085625421_n.jpg"
+                  src="/images/profile.jpeg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />

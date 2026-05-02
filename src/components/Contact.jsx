@@ -1,4 +1,4 @@
-import React from 'react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -18,8 +18,8 @@ const Contact = () => {
 
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="bg-primary bg-opacity-10 dark:bg-opacity-20 p-3 rounded-full mr-4">
-                  <i className="fas fa-envelope text-primary"></i>
+                <div className="bg-primary/10 dark:bg-primary/20 p-3 rounded-full mr-4">
+                  <Mail className="text-primary w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="font-semibold">Email</h4>
@@ -33,8 +33,8 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start">
-                <div className="bg-secondary bg-opacity-10 dark:bg-opacity-20 p-3 rounded-full mr-4">
-                  <i className="fas fa-phone-alt text-secondary"></i>
+                <div className="bg-secondary/10 dark:bg-secondary/20 p-3 rounded-full mr-4">
+                  <Phone className="text-secondary w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="font-semibold">Phone</h4>
@@ -48,8 +48,8 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start">
-                <div className="bg-purple-500 bg-opacity-10 dark:bg-opacity-20 p-3 rounded-full mr-4">
-                  <i className="fas fa-map-marker-alt text-purple-500"></i>
+                <div className="bg-purple-500/10 dark:bg-purple-500/20 p-3 rounded-full mr-4">
+                  <MapPin className="text-purple-500 w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="font-semibold">Location</h4>
@@ -65,24 +65,28 @@ const Contact = () => {
               <div className="flex space-x-4">
                 <a
                   href="https://github.com/BlackDevSamer"
+                  target="_blank" rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center hover:bg-primary hover:text-white transition"
                 >
                   <i className="fab fa-github"></i>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/samer-mohamed-a26624324/"
+                  target="_blank" rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center hover:bg-blue-500 hover:text-white transition"
                 >
                   <i className="fab fa-linkedin-in"></i>
                 </a>
                 <a
                   href="https://www.facebook.com/profile.php?id=100009090529383"
+                  target="_blank" rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center hover:bg-blue-400 hover:text-white transition"
                 >
                   <i className="fab fa-facebook"></i>
                 </a>
                 <a
                   href="https://www.instagram.com/s_m0hmed/"
+                  target="_blank" rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center hover:bg-pink-500 hover:text-white transition"
                 >
                   <i className="fab fa-instagram"></i>
