@@ -17,12 +17,14 @@ const Hero = () => {
             <div className="flex space-x-4">
               <a
                 href="#contact"
+                onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}
                 className="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300"
               >
                 Contact Me
               </a>
               <a
                 href="#projects"
+                onClick={(e) => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }); }}
                 className="border border-primary text-primary dark:text-white dark:border-white hover:bg-gray-100 dark:hover:bg-gray-800 px-6 py-3 rounded-lg font-medium transition duration-300"
               >
                 View Work

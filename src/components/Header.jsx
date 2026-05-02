@@ -28,19 +28,41 @@ const Header = () => {
     }
   };
 
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false); // Close mobile menu if open
+    }
+  };
+
+  const navLinks = [
+    { id: 'home', label: 'Home' },
+    { id: 'about', label: 'About' },
+    { id: 'skills', label: 'Skills' },
+    { id: 'projects', label: 'Projects' },
+    { id: 'contact', label: 'Contact' },
+  ];
+
   return (
     <header className="fixed w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-2xl font-bold gradient-text">Portfolio</a>
+          <a href="#" onClick={(e) => scrollToSection(e, 'home')} className="text-2xl font-bold gradient-text">Portfolio</a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#home" className="nav-link">Home</a>
-            <a href="#about" className="nav-link">About</a>
-            <a href="#skills" className="nav-link">Skills</a>
-            <a href="#projects" className="nav-link">Projects</a>
-            <a href="#contact" className="nav-link">Contact</a>
+            {navLinks.map((link) => (
+              <a
+                key={link.id}
+                href={`#${link.id}`}
+                onClick={(e) => scrollToSection(e, link.id)}
+                className="nav-link"
+              >
+                {link.label}
+              </a>
+            ))}
           </nav>
 
           {/* Dark Mode Toggle */}
@@ -72,11 +94,16 @@ const Header = () => {
         {/* Mobile Navigation */}
         <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden mt-2`}>
           <div className="flex flex-col space-y-3 py-3">
-            <a href="#home" className="nav-link px-2 py-1">Home</a>
-            <a href="#about" className="nav-link px-2 py-1">About</a>
-            <a href="#skills" className="nav-link px-2 py-1">Skills</a>
-            <a href="#projects" className="nav-link px-2 py-1">Projects</a>
-            <a href="#contact" className="nav-link px-2 py-1">Contact</a>
+            {navLinks.map((link) => (
+              <a
+                key={link.id}
+                href={`#${link.id}`}
+                onClick={(e) => scrollToSection(e, link.id)}
+                className="nav-link px-2 py-1"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
         </div>
       </div>
